@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="6" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-06T06:54:14 EDT" name="OrangeHRM Automation Suite" finished-at="2026-06-06T06:57:56 EDT" duration-ms="222464">
+    <groups>
+    </groups>
+    <test started-at="2026-06-06T06:54:14 EDT" name="Login Tests" finished-at="2026-06-06T06:56:37 EDT" duration-ms="143310">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@6771beb3]" started-at="2026-06-06T06:54:14 EDT" name="setUp" finished-at="2026-06-06T06:54:41 EDT" duration-ms="27218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidLogin()[pri:1, instance:tests.LoginTest@6771beb3]" started-at="2026-06-06T06:54:41 EDT" name="testValidLogin" description="Verify successful login with valid credentials" finished-at="2026-06-06T06:54:45 EDT" duration-ms="3392" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@6771beb3]" started-at="2026-06-06T06:54:45 EDT" name="tearDown" finished-at="2026-06-06T06:54:47 EDT" duration-ms="2752" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@6771beb3]" started-at="2026-06-06T06:54:47 EDT" name="setUp" finished-at="2026-06-06T06:54:55 EDT" duration-ms="7847" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInvalidLogin()[pri:2, instance:tests.LoginTest@6771beb3]" started-at="2026-06-06T06:54:55 EDT" name="testInvalidLogin" description="Verify login fails with invalid credentials" finished-at="2026-06-06T06:55:00 EDT" duration-ms="4610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@6771beb3]" started-at="2026-06-06T06:55:00 EDT" name="tearDown" finished-at="2026-06-06T06:55:00 EDT" duration-ms="568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@6771beb3]" started-at="2026-06-06T06:55:00 EDT" name="setUp" finished-at="2026-06-06T06:55:03 EDT" duration-ms="3070" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testEmptyUsername()[pri:3, instance:tests.LoginTest@6771beb3]" started-at="2026-06-06T06:55:03 EDT" name="testEmptyUsername" description="Verify login fails with empty username" finished-at="2026-06-06T06:55:38 EDT" duration-ms="34601" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //p[@class='oxd-text oxd-text--p oxd-alert-content-text']' (tried for 20 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //p[@class='oxd-text oxd-text--p oxd-alert-content-text']' (tried for 20 second(s) with 500 milliseconds interval)
+at org.testng.Assert.fail(Assert.java:111)
+at tests.LoginTest.testEmptyUsername(LoginTest.java:89)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyUsername -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@6771beb3]" started-at="2026-06-06T06:55:38 EDT" name="tearDown" finished-at="2026-06-06T06:55:39 EDT" duration-ms="732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@6771beb3]" started-at="2026-06-06T06:55:39 EDT" name="setUp" finished-at="2026-06-06T06:55:49 EDT" duration-ms="10535" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testEmptyPassword()[pri:4, instance:tests.LoginTest@6771beb3]" started-at="2026-06-06T06:55:49 EDT" name="testEmptyPassword" description="Verify login fails with empty password" finished-at="2026-06-06T06:56:24 EDT" duration-ms="34252" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //p[@class='oxd-text oxd-text--p oxd-alert-content-text']' (tried for 20 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //p[@class='oxd-text oxd-text--p oxd-alert-content-text']' (tried for 20 second(s) with 500 milliseconds interval)
+at org.testng.Assert.fail(Assert.java:111)
+at tests.LoginTest.testEmptyPassword(LoginTest.java:112)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@6771beb3]" started-at="2026-06-06T06:56:24 EDT" name="tearDown" finished-at="2026-06-06T06:56:24 EDT" duration-ms="498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@6771beb3]" started-at="2026-06-06T06:56:24 EDT" name="setUp" finished-at="2026-06-06T06:56:30 EDT" duration-ms="5559" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogout()[pri:5, instance:tests.LoginTest@6771beb3]" started-at="2026-06-06T06:56:30 EDT" name="testLogout" description="Verify user can logout successfully" finished-at="2026-06-06T06:56:37 EDT" duration-ms="7132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@6771beb3]" started-at="2026-06-06T06:56:37 EDT" name="tearDown" finished-at="2026-06-06T06:56:37 EDT" duration-ms="407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest -->
+    </test> <!-- Login Tests -->
+    <test started-at="2026-06-06T06:56:37 EDT" name="Admin Tests" finished-at="2026-06-06T06:57:30 EDT" duration-ms="52807">
+      <class name="tests.AdminTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.AdminTest@7d20d0b]" started-at="2026-06-06T06:56:37 EDT" name="setUp" finished-at="2026-06-06T06:56:43 EDT" duration-ms="5635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="loginBeforeTest()[pri:0, instance:tests.AdminTest@7d20d0b]" started-at="2026-06-06T06:56:43 EDT" name="loginBeforeTest" finished-at="2026-06-06T06:56:48 EDT" duration-ms="5042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginBeforeTest -->
+        <test-method signature="testAdminPageDisplayed()[pri:1, instance:tests.AdminTest@7d20d0b]" started-at="2026-06-06T06:56:48 EDT" name="testAdminPageDisplayed" description="Verify Admin page is displayed" finished-at="2026-06-06T06:56:48 EDT" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAdminPageDisplayed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AdminTest@7d20d0b]" started-at="2026-06-06T06:56:48 EDT" name="tearDown" finished-at="2026-06-06T06:56:49 EDT" duration-ms="714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.AdminTest@7d20d0b]" started-at="2026-06-06T06:56:49 EDT" name="setUp" finished-at="2026-06-06T06:56:51 EDT" duration-ms="2515" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="loginBeforeTest()[pri:0, instance:tests.AdminTest@7d20d0b]" started-at="2026-06-06T06:56:51 EDT" name="loginBeforeTest" finished-at="2026-06-06T06:56:58 EDT" duration-ms="7000" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginBeforeTest -->
+        <test-method signature="testSearchUser()[pri:2, instance:tests.AdminTest@7d20d0b]" started-at="2026-06-06T06:56:58 EDT" name="testSearchUser" description="Verify searching a user in Admin" finished-at="2026-06-06T06:57:29 EDT" duration-ms="31117" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@placeholder='Username']' (tried for 20 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@placeholder='Username']' (tried for 20 second(s) with 500 milliseconds interval)
+at org.testng.Assert.fail(Assert.java:111)
+at tests.AdminTest.testSearchUser(AdminTest.java:67)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AdminTest@7d20d0b]" started-at="2026-06-06T06:57:29 EDT" name="tearDown" finished-at="2026-06-06T06:57:30 EDT" duration-ms="754" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.AdminTest -->
+    </test> <!-- Admin Tests -->
+    <test started-at="2026-06-06T06:57:30 EDT" name="Employee Tests" finished-at="2026-06-06T06:57:56 EDT" duration-ms="26227">
+      <class name="tests.EmployeeTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.EmployeeTest@4009e306]" started-at="2026-06-06T06:57:30 EDT" name="setUp" finished-at="2026-06-06T06:57:35 EDT" duration-ms="5388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="loginBeforeTest()[pri:0, instance:tests.EmployeeTest@4009e306]" started-at="2026-06-06T06:57:35 EDT" name="loginBeforeTest" finished-at="2026-06-06T06:57:41 EDT" duration-ms="5019" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginBeforeTest -->
+        <test-method signature="testAddEmployee()[pri:1, instance:tests.EmployeeTest@4009e306]" started-at="2026-06-06T06:57:41 EDT" name="testAddEmployee" description="Verify adding a new employee" finished-at="2026-06-06T06:57:43 EDT" duration-ms="2554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddEmployee -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.EmployeeTest@4009e306]" started-at="2026-06-06T06:57:43 EDT" name="tearDown" finished-at="2026-06-06T06:57:44 EDT" duration-ms="714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.EmployeeTest@4009e306]" started-at="2026-06-06T06:57:44 EDT" name="setUp" finished-at="2026-06-06T06:57:50 EDT" duration-ms="6320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="loginBeforeTest()[pri:0, instance:tests.EmployeeTest@4009e306]" started-at="2026-06-06T06:57:50 EDT" name="loginBeforeTest" finished-at="2026-06-06T06:57:55 EDT" duration-ms="4415" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginBeforeTest -->
+        <test-method signature="testSearchEmployee()[pri:2, instance:tests.EmployeeTest@4009e306]" started-at="2026-06-06T06:57:55 EDT" name="testSearchEmployee" description="Verify searching for an employee" finished-at="2026-06-06T06:57:56 EDT" duration-ms="1304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchEmployee -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.EmployeeTest@4009e306]" started-at="2026-06-06T06:57:56 EDT" name="tearDown" finished-at="2026-06-06T06:57:56 EDT" duration-ms="501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.EmployeeTest -->
+    </test> <!-- Employee Tests -->
+  </suite> <!-- OrangeHRM Automation Suite -->
+</testng-results>
